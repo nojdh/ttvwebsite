@@ -11,5 +11,5 @@
     "dependencies": {
         "express": "latest",
         "express-handlebars": "latest"
-    },
+    }
 }
