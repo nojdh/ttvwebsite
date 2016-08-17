@@ -6,42 +6,28 @@
     <title>Through The Void</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation-flex.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <link rel="stylesheet" href="/styles/style.css" media="screen" title="no title" charset="utf-8">
-    <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 
 <body>
-    <div class="testwrapper">
-        <span id="top"></span>
-        <video playsinline autoplay muted loop poster="placeholder.jpg" id="video">
-            <source src="/images/wowlow.webm" type="video/webm">
-        </video>
-        <header>
-            <div class="wrapper">
-                <nav>
-                    <a href="/">Home</a>
-                    <a href="/roster">Roster</a>
-                    <a href="/about">About Us</a>
-                    <a href="/about">Apply</a>
-                </nav>
-            </div>
-        </header>
-
-        <div class="content">
-            {{{ body }}}
+    <video playsinline autoplay muted loop poster="placeholder.jpg" id="video">
+        <source src="/images/wowlow.webm" type="video/webm">
+    </video>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <a href="/">Hem</a>
+                <a href="/roster">Roster</a>
+                <a href="/about">Om oss</a>
+                <a href="https://goo.gl/forms/TENhWkqiblpMi78B2">Ansök</a>
+            </nav>
         </div>
+    </header>
 
-        <footer>
-            <div class="row" id="go-up">
-                <a href="#top">
-                    <div class="arrow-up"></div>
-                </a>
-            </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-        <script src="/scripts/script.js" charset="utf-8"></script>
+    <div class="content">
+        {{{ body }}}
     </div>
+
 </body>
 
 </html>
