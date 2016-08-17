@@ -1,3 +1,7 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+html * {
+    font-family: 'Roboto', sans-serif;
+}
 body {
     font-size: 100%;
     color: white;
@@ -33,6 +37,10 @@ nav a {
     margin: 0 auto;
     text-align: center;
 }
+.testwrapper {
+    background-attachment: fixed;
+    background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) .125em, transparent 0, transparent .25em);
+}
 .toprow {
     padding-top: 50px;
 }
@@ -50,13 +58,43 @@ nav a {
 .topleft, .botleft {
     border-right: 1px solid white;
 }
+@media (max-width: 780px) {
+    .topleft, .botleft, .topright, .botright {
+        border: none;
+    }
+}
 .gridgrej {
     text-align: center;
 }
-.gridgrej > i {
+.gridgrej> i {
     display: inline-block;
     width: 100%;
-    text-align:center;
+    text-align: center;
+}
+#go-down, #go-up {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#go-down> a, #go-up > a {
+    margin: 0 auto;
+}
+.stuff {
+    padding-top: 200px;
+    padding-bottom: 800px;
+}
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid white;
+}
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white;
 }
 #video {
     position: fixed;
